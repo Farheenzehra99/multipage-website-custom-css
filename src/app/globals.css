@@ -1,4 +1,10 @@
-@import './navbar.css';
-@import './hero.css';
-@import './buttons.css';
-@import './footer.css';
+@import '../styles/navbar.css';
+@import '../styles/hero.css';
+@import '../styles/buttons.css';
+@import '../styles/footer.css';
+@import '../styles/banner.css';
+@import '../styles/contact.css';
+@import '../styles/services.css';
+@import '../styles/testimonials.css';
+@import '../styles/playstore.css'
+

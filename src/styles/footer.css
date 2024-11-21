@@ -1,0 +1,125 @@
+/* styles/footer.css */
+
+.footer-background {
+    background-image: url('/images/f1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .footer-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    min-height: 400px;
+    padding: 20px 0;
+  }
+  
+  .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+  }
+  
+  .footer-section {
+    padding: 1rem;
+    color: #ffffff;
+  }
+  
+  .footer-logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  .footer-description {
+    margin-top: 1rem;
+    font-size: 1rem;
+  }
+  
+  .footer-button {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #e60023;
+    color: #ffffff;
+    font-size: 0.875rem;
+    border-radius: 999px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .footer-button:hover {
+    background-color: #d5001f;
+  }
+  
+  .footer-links-container {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+  }
+  
+  .footer-link {
+    display: inline-block;
+    color: #ffffff;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+  }
+  
+  .footer-link:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-contact-info {
+    margin-top: 1rem;
+    color: #ffffff;
+  }
+  
+  .footer-social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1.5rem;
+  }
+  
+  .social-icon {
+    font-size: 1.75rem;
+    color: #ffffff;
+    transition: transform 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    transform: scale(1.1);
+  }
+  
+  .footer-rights {
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  
+  /* Responsive Styles */
+  @media (min-width: 768px) {
+    .footer-container {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+  

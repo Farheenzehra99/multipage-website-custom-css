@@ -1,0 +1,157 @@
+/* Main Banner Container */
+.banner-Background {
+  background-image: url('/images/h2.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 2rem; /* Adjusted for spacing */
+  width: 100%;
+}
+
+/* Flexbox Layout for Banner */
+.banner-Container {
+  display: flex;
+  justify-content: space-between; /* Text and image on either side */
+  align-items: center; /* Center align items vertically */
+  flex-wrap: wrap; /* Stack on smaller screens */
+  max-width: 1200px;
+  margin: 0 auto; /* Center container horizontally */
+  gap: 2rem; /* Add space between text and image */
+}
+
+/* Image Section */
+.banner-image {
+  flex: 1; /* Take up one part of the space */
+  max-width: 50%; /* Prevent the image from becoming too large */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15rem;
+}
+
+.banner-image img {
+  max-width: 100%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+}
+
+/* Text Section */
+.banner-Text {
+  flex: 1; /* Take up one part of the space */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.5rem; /* Space between text elements */
+  text-align: left;
+}
+
+.title {
+  font-size: 2.5rem; /* Large heading */
+  font-weight: 700;
+  color: #422222; /* Match the screenshot */
+  margin-bottom: 1rem;
+}
+
+.banner-Description {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  letter-spacing: 0.025em;
+  color: #4b5563; /* Dark gray for description */
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.textList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.feature {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.featureText {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #444;
+}
+
+.icon {
+  font-size: 1.5rem;
+}
+
+/* Icon Colors */
+.redIcon {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgb(238, 133, 133); /* Light red */
+  color: white;
+}
+
+.greenIcon {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgb(123, 230, 123); /* Light green */
+  color: white;
+}
+
+.blueIcon {
+  font-size: 2rem;
+  border-radius: 50%;
+  padding: 0.5rem;
+  background-color: rgb(127, 173, 243); /* Light blue */
+  color: white;
+}
+
+/* Tea Lover Section */
+.teaLover {
+  padding: 1.5rem;
+  border-left: 4px solid #444; /* Left border */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 5px;
+  background-color: white;
+}
+
+.teaLoverTitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.teaLoverDescription {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .banner-Container {
+    flex-direction: column; /* Stack text and image */
+    text-align: center; /* Center-align text */
+  }
+
+  .banner-image {
+    max-width: 100%; /* Allow full width */
+  }
+
+  .banner-Text {
+    text-align: center; /* Center-align for smaller screens */
+    padding: 0;
+  }
+
+  .title {
+    font-size: 2rem; /* Slightly smaller for mobile */
+  }
+}

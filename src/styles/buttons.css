@@ -1,0 +1,31 @@
+/* styles/buttons.css */
+
+.hero-button,
+.order-button {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  border-radius: 999px;
+  font-family: 'YourSecondaryFont', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.7s ease;
+  cursor: pointer;
+}
+
+.hero-button {
+  background-color: #3498db; /* Replace with your primary color */
+  color: white;
+}
+
+.order-button {
+  background-color: #333333; /* Replace with your brand dark color */
+  color: white;
+}
+
+.hero-button:hover,
+.order-button:hover {
+  transform: scale(1.05);
+}
